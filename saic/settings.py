@@ -59,7 +59,7 @@ DEFAULT_APPS = [
     # 'portal',
     'el_pagination',
     # social auth
-    'social.apps.django_app.default',
+    # 'social.apps.django_app.default',
     # 'social_django'
 ]
 
@@ -168,6 +168,7 @@ AUTH_USER_MODEL='portal.MyUser'
 LOGIN_URL='/login/'
 WSGI_APPLICATION = 'saic.wsgi.application'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 #EMAIL_USE_TLS = True
 #EMAIL_HOST = 'smtp.gmail.com'
 # SESSION_COOKIE_SECURE= True
