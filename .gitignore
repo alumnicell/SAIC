@@ -24,3 +24,4 @@ failed.txt
 secret.txt
 sendMail.txt
 db.sqlite3
+settings.py
