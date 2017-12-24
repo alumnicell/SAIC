@@ -24,4 +24,4 @@ failed.txt
 secret.txt
 sendMail.txt
 db.sqlite3
-saic/settings.py
+saic/settings.py*
