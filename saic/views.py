@@ -282,3 +282,8 @@ def chronicles(request):
         except:
                 context_dict['chronicle_count']=0
 	return render_to_response('chronicle.html',context_dict,context)
+
+def abtinstitute(request):
+	return render(request,'institute.html',{})
+def abtcentenary(request):
+	return render(request,'centenary.html',{})

@@ -32,6 +32,8 @@ urlpatterns = [
   url(r'^signup/$', views.signup_page),
   url(r'^team/$',views.team_page),
   url(r'^chronicles/$',views.chronicles),
+  url(r'^institute/$',views.abtinstitute,name='abtinstitute'),
+  url(r'^centenary/$',views.abtcentenary,name='abtinstitute'),
   
   #web portal
   url(r'^portal/',include(portal.urls)),
@@ -47,4 +49,4 @@ urlpatterns = [
   url('', include('django.contrib.auth.urls', namespace='auth')),
   url(r'^pass_recovery/$',views.pass_recovery),
 ] 
-# + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

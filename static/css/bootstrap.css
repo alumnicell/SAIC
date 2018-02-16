@@ -4356,8 +4356,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
-    margin: 0;
+    clear:both;
+    margin-left:20px;
   }
   .navbar-nav > li {
     float: left;
