@@ -1700,3 +1700,4 @@ def AlumniMeet(request):
 	get_notification(request,context_dict,category)
 	# Render list page with the documents and the form
 	return render_to_response('portal/alumniMeet.html',context_dict,context_instance=RequestContext(request))
+
