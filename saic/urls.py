@@ -33,8 +33,8 @@ urlpatterns = [
   url(r'^team/$',views.team_page),
   url(r'^chronicles/$',views.chronicles),
   url(r'^institute/$',views.abtinstitute,name='abtinstitute'),
-  url(r'^centenary/$',views.abtcentenary,name='abtinstitute'),
-  
+  url(r'^centenary/$',views.abtcentenary,name='abtcentenary'),
+
   #web portal
   url(r'^portal/',include(portal.urls)),
   url(r'^portal/success/$', portal.views.success, name='order.success'),
@@ -48,5 +48,5 @@ urlpatterns = [
   url('', include('social.apps.django_app.urls', namespace='social')),
   url('', include('django.contrib.auth.urls', namespace='auth')),
   url(r'^pass_recovery/$',views.pass_recovery),
-] 
+]
 urlpatterns+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
